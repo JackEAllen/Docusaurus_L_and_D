@@ -3,6 +3,10 @@ id: my-doc-id
 title: My document title
 description: My document description
 slug: /my-custom-url
+
+tags:
+  - Demo
+  - Getting started
 ---
 
 ## Markdown heading

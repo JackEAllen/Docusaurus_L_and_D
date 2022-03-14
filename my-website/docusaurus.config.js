@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'IBEX Experiment Control Software',
+  tagline: 'Controls Systems are Cool!',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/IBEX_logo.jpg',
+  organizationName: 'ISISComputingGroup', // Usually your GitHub org/user name.
+  projectName: 'IBEX', // Usually your repo name.
 
   presets: [
     [
@@ -43,22 +43,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'IBEX',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'IBEX Logo',
+          src: 'img/IBEX_logo.jpg',
         },
         items: [
           {
-            // type: 'doc',
-            type: 'docsVersionDropdown',
+            type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ISISComputingGroup/IBEX',
             label: 'GitHub',
             position: 'right',
           },
@@ -80,16 +79,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'STFC ISIS Website',
+                href: 'https://www.isis.stfc.ac.uk/Pages/IBEX.aspx',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/ISISComputingGroup/IBEX',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Sharepoint',
+                href: 'https://stfc365.sharepoint.com/sites/isis-hub/SitePages/ISIS-Experiment-Controls.aspx',
               },
             ],
           },
@@ -102,12 +101,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ISISComputingGroup/IBEX',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} IBEX Experiment Controls Group, ISIS, STFC, UKRI`,
       },
       prism: {
         theme: lightCodeTheme,

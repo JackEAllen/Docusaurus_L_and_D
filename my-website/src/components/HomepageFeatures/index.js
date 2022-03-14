@@ -4,32 +4,39 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'What is IBEX',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        IBEX is a controls system software.
+        The objective of the IBEX project is to create a new control system 
+        for the neutron & muon instruments at ISIS to replace the SECI 
+        control system previously used at ISIS. 
+        The new control system employs a modern, layered and distributed architecture, 
+        enabling the development of loosely-coupled client and server applications.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'The Docs',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Please take a look at the Docs to view more in-depth information about 
+        IBEX and the devices we support and develop for.
+        The <code>docs</code> will contain everything needed 
+        for you as a user or a developer of IBEX.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Support',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        For support, please take a look at the <code>docs</code> common 
+        troubleshooting page. If you are still unable to resolve your 
+        problem, contact a member of the team for additional help.
       </>
     ),
   },
