@@ -4,6 +4,9 @@ sidebar_position: 2
 title: Home
 description: Developer Home Page
 slug: /Home
+
+tags:
+  - Getting started
 ---
 
 # The IBEX Project - Developer Docs
@@ -39,10 +42,10 @@ slug: /Home
 ## Processes
 
 - [Project Processes](Home/Processes): List of processes we wish to document
-- [Deployment](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Deployment): Deployment Information
-- [Component & Activity Stewards](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Component-&-Activity-Stewards): Component & Activity Stewards: who looks after which components/activities
-- [On Call Guidance](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Providing-Support): Some hints and tips for when you're on call
-- [Remote Working](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Remote-Working): Some procedures for setting up VNC for remote working
+- [Deployment](Home/Deployment): Deployment Information
+- [Component & Activity Stewards](Home/Component_Stewards): Component & Activity Stewards: who looks after which components/activities
+- [On Call Guidance](Home/Providing-Support): Some hints and tips for when you're on call
+- [Remote Working](Home/Remote_Working): Some procedures for setting up VNC for remote working
 
 ---
 
