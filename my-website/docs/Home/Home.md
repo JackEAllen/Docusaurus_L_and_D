@@ -9,27 +9,37 @@ tags:
   - Getting started
 ---
 
-export const Highlight = ({children, color}) => (
+export const Highlight = ({children, color, page}) => (
   <span
     style={{
       backgroundColor: color,
       borderRadius: '20px',
       color: '#fff',
       padding: '10px',
+      margin: '2.5px',
       cursor: 'pointer',
     }}
     onClick={() => {
-      window.location.href = "/Docs/Template";
+      window.location.href = page;
     }}>
     {children}
   </span>
 );
 
+function ActionLink() {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log('The link was clicked.');
+  }
+}
+
 # The IBEX Project - Developer Docs
 
 <p></p>
 
-<Highlight color="#1877F2">Developer Template Page</Highlight>
+<Highlight color="#1877F2" page="/Docs/Template" >Template</Highlight>
+
+<Highlight color="#1877F2" page="/Docs/Instrument_and_Devices">Instrument_and_Devices</Highlight>
 
 <p></p>
 

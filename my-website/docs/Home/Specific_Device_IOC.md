@@ -9,9 +9,9 @@ slug: /Home/Specific_Device_IOC
 
 These are the list of categories for an IOC. The IOC can appear in multiple categories if it is relevant. There are details relating to specific device IOCs listed from within the categories where applicable. Most IOC control a device which has [manuals](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Manuals).
 
-- [Cells, Cans, and Sample Holders](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Cells)
+- [Cells, Cans, and Sample Holders](../Instrument_and_Devices/Cells)
 
-- [Choppers](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Choppers)
+- [Choppers](../Instrument_and_Devices/Choppers)
 
 - [Cryogenics](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Cryogenics)
 
