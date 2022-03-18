@@ -16,6 +16,8 @@ const config = {
   organizationName: 'ISISComputingGroup', // Usually your GitHub org/user name.
   projectName: 'IBEX', // Usually your repo name.
 
+  // themes: ['@docusaurus/theme-live-codeblock'],
+  themes: ['docusaurus-live-brython'],
   presets: [
     [
       'classic',

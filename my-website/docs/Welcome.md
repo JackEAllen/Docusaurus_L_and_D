@@ -6,6 +6,28 @@ tags:
   - Getting started
 ---
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      window.location.href = "/Docs/Home";
+    }}>
+    {children}
+  </span>
+);
+
+<p></p>
+
+<Highlight color="#1877F2">Developer WIKI</Highlight>
+
+<p></p>
+
 # IBEX Experiment Controls Software
 Welcome to the IBEX! The coolest controls system in ISIS yet!
 

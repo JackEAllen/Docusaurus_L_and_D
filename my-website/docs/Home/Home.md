@@ -9,7 +9,40 @@ tags:
   - Getting started
 ---
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      window.location.href = "/Docs/Template";
+    }}>
+    {children}
+  </span>
+);
+
 # The IBEX Project - Developer Docs
+
+<p></p>
+
+<Highlight color="#1877F2">Developer Template Page</Highlight>
+
+<p></p>
+
+This is the developer documentation for the IBEX Project.
+
+Developer docs are here to help you get started with the project and provide you with the best possible experience along with answers to common questions for support both you and for you to provide to users.
+
+Developer docs is a living documentation. As a member of the IBEX team, you will be able to access the developer documentation for the project to modify as you need to.
+
+## Template Page
+
+TO help you with making changes to the developer docs, we have created a template page for you to use as a reference. You can find it in the [developer docs repo](https:wqww.google.com) and it is called [Template.md](https:wqww.google.com)
+the template page will include examples of what is possible to write in markdown and MDX. MDX is a way to write markdown that is more powerful than markdown by incorporating other react components.
 
 # The IBEX Project
 
@@ -77,55 +110,3 @@ tags:
 
 
 
-
-
-
-
-
-
-
-
-Markdown text with [links](./hello.md)
-
-![Docusaurus logo](/img/docusaurus.png)
-
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurusUpcoming() {
-    return (
-        <h1>Hello, new and improved Docusaurus!</h1>
-    )
-}
-```
-
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-
-
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
