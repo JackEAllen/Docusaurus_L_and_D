@@ -23,12 +23,14 @@ It's possible that the controller may need to be reset (press `RESET` button on 
 # Physical setup
 
 Original configuration:
+```
 NDXLET <---Ethernet---> AnyWhereUSB <---USB/RS232---> SeaLevel RS232-RS485 converter <---RS485---> MB350PC
-
+```
 
 New configuration:
+```
 NDXLET <---Ethernet---> MOXA NPort <---RS232---> Patton RS232-RS485 converter <---RS485---> MB350PC
-
+```
 
 Notes:
 Originally, the passive RS232-RS485 converter could not be made to work correctly despite much effort, so an alternative, more convoluted solution was adopted in the hope that the original design could be reinstated at a later date.  This alternative solution involved a "SeaLevel SeaLink USB serial adapter" (RS232-RS485 converter) connected to a "Digi USBAnywhere" (remote USB hub over Ethernet).
@@ -43,6 +45,7 @@ Switch settings for Patton 2085 Converter:
 DCE / DTE switch:  DCE selected
 
 DIP switches:  (All off originally, but this configuration seems to work also)
+```
 1: Off
 2: Off
 3: On
@@ -51,14 +54,17 @@ DIP switches:  (All off originally, but this configuration seems to work also)
 6: Off
 7: Off
 8: Off
+```
 
 
 DB9M Pin to 2085 terminal connections:
+```
 1 -> RCV-
 2 -> RCV+
 3 -> XMT+
 4 -> XMT-
 5 -> G
+```
 
 
 # Software setup

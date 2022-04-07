@@ -11,7 +11,7 @@ slug: /Home/project_overview
 
 - [Architectural Design](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/High-Level-Architectural-Design): Documents demonstrating the high-level architectural design of the project components.
 
-- [Proposed Design Documents](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Design-Documents): Documents for proposed designs of project extensions.
+- [Proposed Design Documents](project_overview/Design_Documents): Documents for proposed designs of project extensions.
 
 - [How to demonstrate IBEX](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Demo-notes): Some notes on what to show someone when demonstrating IBEX for the first time
 
