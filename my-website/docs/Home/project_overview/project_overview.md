@@ -9,7 +9,7 @@ slug: /Home/project_overview
 
 - [ICP/IBEX Project Overview](https://github.com/ISISComputingGroup/IBEX/wiki): A short overview of the IBEX project, its vision and information on the main instruments it is supporting.
 
-- [Architectural Design](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/High-Level-Architectural-Design): Documents demonstrating the high-level architectural design of the project components.
+- [Architectural Design](project_overview/High_Level_Architecture_Design): Documents demonstrating the high-level architectural design of the project components.
 
 - [Proposed Design Documents](project_overview/Design_Documents): Documents for proposed designs of project extensions.
 
