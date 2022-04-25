@@ -26,13 +26,6 @@ export const Highlight = ({children, color, page}) => (
   </span>
 );
 
-function ActionLink() {
-  function handleClick(e) {
-    e.preventDefault();
-    console.log('The link was clicked.');
-  }
-}
-
 # The IBEX Project - Developer Docs
 
 <p></p>
