@@ -42,9 +42,38 @@ const FeatureList = [
   },
 ];
 
+const FeatureList2 = [
+  {
+    title: 'Controls System For ISIS',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        IBEX is the primary controls system software developed by and for the 
+        ISIS neutron and Muons sources 32 instruments and counting located on TS1 and TS2.
+        We run the controls for a variety of different devices, ranging from 
+        thermometers to Galil and Beckhoff controllers.
+      </>
+    ),
+  },
+];
+
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} role="img" />
+      </div>
+      <div className="text--center padding-horiz--md">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
+
+function Feature2({Svg, title, description}) {
+  return (
+    <div className={clsx('col col--12')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -65,6 +94,12 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
+
+        <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
+          {FeatureList2.map((props, idx) => (
+            <Feature2 key={idx} {...props} />
+          ))}
+          </div>
       </div>
     </section>
   );
