@@ -31,7 +31,7 @@ In addition to this template page, please read through [Docusaurus's Documentati
 
 Below is an example of how to use an image in markdown. It's essentially exactly the same implementation as you would use in a normal markdown page, which highlights one of the true benefits of Docusaurus! 
 
-Docusuarus allows you to write documentation in a variety of different formats, including markdown, HTML and Javascript, and even MDX! MDX is markdown that is more powerful than pure markdown by incorporating other react components. All markdown raw or in the form of mdx is converted to tartic HTML and Javascript on deployment which you can see by using the your chgosen web browsers inspection tool.
+Docusuarus allows you to write documentation in a variety of different formats, including markdown, HTML, Javascript, and even MDX! MDX is markdown that is more powerful than pure markdown by incorporating React components. All markdown raw or in the form of mdx is converted to tartic HTML and Javascript on deployment which you can see by using the your chosen web browsers inspection tool.
 
 Images are stored in `/img/<IMAGE_FILE>`
 
@@ -42,7 +42,7 @@ Images are stored in `/img/<IMAGE_FILE>`
 ## Collapsable Sections
 
 Similarly to regualr markdown, you can create collapsable sections of content. Below is an example of how to do this.
-The tags are not realle HTML tags, but jsx tags.
+The tags are not real HTML tags, but jsx tags.
 
 ```jsx
 <details>
@@ -80,7 +80,8 @@ The tags are not realle HTML tags, but jsx tags.
 
 ## Admonitions
 
-Admonitions are useful snippets that can be used to help you with your documentation by providing you with a quick reference to common things you may need to be aware of as a user reading hte documentation such as INFO, WARNING, ERROR, etc.
+Admonitions are useful snippets that can be used to help you with your documentation by providing you with a quick reference to common things you may need to be aware of as a user reading the documentation such as <b style={{color: 'yellow'}}>INFO</b>, <b style={{color: 'orange'}}>WARNING</b>, <b style={{color: 'red'}}>ERROR</b>, etc.
+
 
 ```jsx
 :::note Optional Title
@@ -122,7 +123,7 @@ Some **content** with _markdown_ `syntax`. Check [this `api`](#).
 
 
 ### Admonitions with MDX
-Using MDX, you can make admontation tabs. The tabs take advantage of mdx by relative import `./styles.module.css` which contains some custom css to change the colours of hte tabs to make them more distinguishable from one another.
+Using MDX, you can make admontation tabs. The tabs take advantage of mdx by relative import `./styles.module.css` which contains some custom css to change the colours of the tabs to make them more distinguishable from one another.
 
 ```jsx
 :::tip Use tabs in admonitions
@@ -243,6 +244,7 @@ Live python is achieved using [Brython](https://github.com/lebalz/docusaurus-liv
 ```py live_py
 from turtle import *
 color('red', 'yellow')
+turtle.speed(speed=10)
 begin_fill()
 while True:
     forward(200)
@@ -251,7 +253,9 @@ while True:
     if abs(p[0]) < 1 and abs(p[1]) < 1:
         break
 end_fill()
+turtle.penup()
 setposition(0, 200)
+turtle.pendown()
 write("IBEX is the Coolest!", font=("Arial", 20, "normal"), align="top")
 done()
 ```

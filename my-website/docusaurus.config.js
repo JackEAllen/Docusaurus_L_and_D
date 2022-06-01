@@ -7,15 +7,29 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'IBEX Experiment Control Software',
-  tagline: 'Controls Systems are Cool!',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Controls systems are cool!',
+  url: 'https://ISIS_Experiment_Controls_Computing.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/IBEX_logo.jpg',
   organizationName: 'ISISComputingGroup', // Usually your GitHub org/user name.
   projectName: 'IBEX', // Usually your repo name.
-
+//   i18n: {
+//     defaultLocale: 'en',
+//     locales: ['en', 'fr', 'ja'],
+//     localeConfigs: {
+//       en: {
+//         label: 'English',
+//       },
+//       fr: {
+//         label: 'Français',
+//       },
+//       ja: {
+//         label: '日本語',
+//       },
+//   },
+// },
   // themes: ['@docusaurus/theme-live-codeblock'],
   themes: ['docusaurus-live-brython'],
   presets: [
@@ -52,6 +66,9 @@ const config = {
         },
         items: [
           {
+            type: 'docsVersionDropdown',
+          },
+          {
             type: 'doc',
             docId: 'Welcome',
             position: 'left',
@@ -63,6 +80,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'left',
+          // },
         ],
       },
       footer: {
