@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'IBEX Experiment Control Software',
-  tagline: 'Controls systems are cool!',
+  tagline: 'Controls Systems are Cool!',
   url: 'https://ISIS_Experiment_Controls_Computing.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -15,22 +15,6 @@ const config = {
   favicon: 'img/IBEX_logo.jpg',
   organizationName: 'ISISComputingGroup', // Usually your GitHub org/user name.
   projectName: 'IBEX', // Usually your repo name.
-//   i18n: {
-//     defaultLocale: 'en',
-//     locales: ['en', 'fr', 'ja'],
-//     localeConfigs: {
-//       en: {
-//         label: 'English',
-//       },
-//       fr: {
-//         label: 'Français',
-//       },
-//       ja: {
-//         label: '日本語',
-//       },
-//   },
-// },
-  // themes: ['@docusaurus/theme-live-codeblock'],
   themes: ['docusaurus-live-brython'],
   presets: [
     [
@@ -40,13 +24,20 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/JackEAllen/Docusaurus_L_and_D/tree/ibex_documentation_migration/my-website',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Upcoming',
+              path: 'Upcoming',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/JackEAllen/Docusaurus_L_and_D/tree/ibex_documentation_migration/my-website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
