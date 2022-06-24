@@ -6,16 +6,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'IBEX Experiment Control Software',
+  tagline: 'Controls Systems are Cool!',
+  url: 'https://ISIS_Experiment_Controls_Computing.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  favicon: 'img/IBEX_logo.jpg',
+  organizationName: 'ISISComputingGroup', // Usually your GitHub org/user name.
+  projectName: 'IBEX', // Usually your repo name.
+  themes: ['docusaurus-live-brython'],
   presets: [
     [
       'classic',
@@ -24,13 +24,20 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/JackEAllen/Docusaurus_L_and_D/tree/ibex_documentation_migration/my-website',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Upcoming',
+              path: 'Upcoming',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/JackEAllen/Docusaurus_L_and_D/tree/ibex_documentation_migration/my-website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,25 +50,31 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'IBEX',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'IBEX Logo',
+          src: 'img/IBEX_logo.jpg',
         },
         items: [
           {
-            // type: 'doc',
             type: 'docsVersionDropdown',
-            docId: 'intro',
+          },
+          {
+            type: 'doc',
+            docId: 'Welcome',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ISISComputingGroup/IBEX',
             label: 'GitHub',
             position: 'right',
           },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'left',
+          // },
         ],
       },
       footer: {
@@ -80,16 +93,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'STFC ISIS Website',
+                href: 'https://www.isis.stfc.ac.uk/Pages/IBEX.aspx',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/ISISComputingGroup/IBEX',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Sharepoint',
+                href: 'https://stfc365.sharepoint.com/sites/isis-hub/SitePages/ISIS-Experiment-Controls.aspx',
               },
             ],
           },
@@ -102,12 +115,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ISISComputingGroup/IBEX',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} IBEX Experiment Controls Group, ISIS, STFC, UKRI`,
       },
       prism: {
         theme: lightCodeTheme,
